@@ -1,0 +1,75 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #CBBCC9;
+  font-family: "Roboto Mono", monospace;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title {
+  color: #745971;
+  font-weight: 700;
+  font-size: 34px;
+  text-align: justify;
+}
+
+.keyboard-container {
+  border: 2px white solid;
+  border-radius: 10px;
+  padding: 5px;
+  width: 920px;
+  margin: 0 auto;
+}
+
+.keyboard-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 20px;
+  color: #333;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 7px 4px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.keyboard-key__width-auto {
+  width: auto;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.keyboard-key:hover {
+  background-color: #ddd;
+}
+
+.keyboard-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.key:active {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  transform: translateY(1px);
+}
+
+.highlight {
+  background-color: #745971;
+}/*# sourceMappingURL=style.css.map */
