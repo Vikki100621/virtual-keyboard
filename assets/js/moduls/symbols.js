@@ -40,7 +40,7 @@ export const keySymbols = {
    'Semicolon': ';',
    'Quote': "'",
    'Enter': '↵',
-   'ShiftLeft': '⇧',
+   'ShiftLeft': 'Shift⇧',
    'KeyZ': 'z',
    'KeyX': 'x',
    'KeyC': 'c',
@@ -50,8 +50,9 @@ export const keySymbols = {
    'KeyM': 'm',
    'Comma': ',',
    'Period': '.',
+   'ArrowUp': '↑',
    'Slash': '/',
-   'ShiftRight': '⇧',
+   'ShiftRight': 'Shift⇧',
    'ControlLeft': 'Ctrl',
    'MetaLeft': 'Win',
    'AltLeft': 'Alt',
@@ -60,6 +61,6 @@ export const keySymbols = {
    'ArrowLeft': '←',
    'ArrowDown': '↓',
    'ArrowRight': '→',
-   'ControlRight': 'Ctrl'
+   'ControlRight': 'Ctrl',
 };
 

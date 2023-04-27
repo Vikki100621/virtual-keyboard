@@ -67,7 +67,6 @@ img {
 /* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
-textarea,
 select {
   font: inherit;
 }/*# sourceMappingURL=normilize.css.map */

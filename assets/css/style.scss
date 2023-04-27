@@ -9,7 +9,10 @@
 
 .main {
    flex: 1 1 auto;
+   display: flex;
+   flex-direction: column;
 }
+
 
 .header {
    display: flex;
@@ -25,13 +28,21 @@
    text-align: justify;
 }
 
+.textarea-block {
+   width: 920px;
+}
+
+
 .keyboard-container {
    border: 2px white solid;
    border-radius: 10px;
    padding: 5px;
    width: 920px;
    margin: 0 auto;
- 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 .keyboard-key {
@@ -58,12 +69,6 @@
 
 .keyboard-key:hover {
    background-color: #ddd;
-}
-
-.keyboard-row {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
 }
 
 .key:active {

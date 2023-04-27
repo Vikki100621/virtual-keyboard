@@ -12,7 +12,7 @@ let screen = createElement('textarea', 'textarea-block')
 
 import { keySymbols } from "./moduls/symbols.js";
 
-appendElementToParent(main, screen);
+appendChildElementtoParent(main, screen);
 appendElementToParent(body, wrapper);
 appendElementToParent(wrapper, header);
 appendElementToParent(wrapper, main);
@@ -41,12 +41,6 @@ function createElementsOfkeyboard() {
    keyboardLayout.forEach(key => {
       const keyElement = createElement('div', 'keyboard-key');
       keyElement.textContent = key;
-      keyboardData.find(k => {
-         if (keySymbols[k] === key) {
-            const classToAdd = k.toString();
-            keyElement.classList.add(classToAdd);
-         }
-      })
       if (key === '⌫' || key === 'Tab↹' || key === 'Enter↵' || key === 'Caps Lock⇪' || key === 'Shift⇧' || key === 'Ctrl' || key === 'Alt' || key === 'Win' || key === ' ') {
          keyElement.classList.add('keyboard-key__width-auto');
       };
@@ -58,10 +52,8 @@ function createElementsOfkeyboard() {
 };
 
 
-
 function highlightKeyOnKeyboard(event) {
    const key = event.code;
-   console.log(key)
    const eventloc = event.location;
    const keyboardKeys = document.querySelectorAll('.keyboard-key');
 
