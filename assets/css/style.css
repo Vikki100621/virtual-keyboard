@@ -11,7 +11,7 @@
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 .header {
@@ -30,11 +30,10 @@
 
 .textarea-block {
   width: 920px;
+  width: 920px;
   margin: 0 auto;
   min-height: 200px;
-  max-height: auto;
-  border: 2px white solid;
-  border-radius: 10px;
+  max-height: 100%;
 }
 
 .keyboard-container {
@@ -82,4 +81,9 @@
 
 .highlight {
   background-color: #745971;
+}
+
+.keyboard-key.highlight {
+  transform: translateY(2px);
+  transition: transform 0.1s ease;
 }/*# sourceMappingURL=style.css.map */
